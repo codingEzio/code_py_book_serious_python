@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "==3.7.8"
+black = "==19.3b0"
+
+[packages]
+jupyter = "==1.0.0"
+ipython = "==7.8.0"
+sphinx = "==2.2.1"
+
+[requires]
+python_version = "3.7"
