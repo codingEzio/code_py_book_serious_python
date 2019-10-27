@@ -94,3 +94,16 @@ uuid                generate UniversallyUniqueIDentifiers (UUIDs)
 - personal opinions on _common-programming errors_
   - use native impl instead of on your own: e.g. `itertools.chain()`
   - use [generator expressions](https://realpython.com/introduction-to-python-generators/)<small>(_realpython_)</small> instead of list comprehensions
+
+# Documentation
+
+- _Sphinx_ setup
+  - Try
+    - `$ pipenv install sphinx==2.2.1` (currently the latest ver)
+    - `$ sphinx-quickstart`
+      - `conf.py`: required conf file
+      - `index.rst`: kinda the homepage for your doc
+    - `$ sphinx-build [..]source [..]build` (depends on where you at)
+      - now you can open the generated `index.html` to see the result!
+  - More
+    - [ReStructuredText syntax](http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html)
