@@ -105,5 +105,11 @@ uuid                generate UniversallyUniqueIDentifiers (UUIDs)
       - `index.rst`: kinda the homepage for your doc
     - `$ sphinx-build [..]source [..]build` (depends on where you at)
       - now you can open the generated `index.html` to see the result!
+  - Online editors <small>(might be down at anytime)</small>
+    - [https://livesphinx.herokuapp.com/](https://livesphinx.herokuapp.com/)
+    - [http://rst.ninjs.org/?theme=nature#](http://rst.ninjs.org/?theme=nature#)
   - More
     - [ReStructuredText syntax](http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html)
+    - [A sample of RestructedText](https://github.com/lsegal/atom-rst-preview/blob/master/sample.rst)
+    - [Perfect intro for those who havn't heard of _Sphinx_](https://speakerdeck.com/stephenfin/who-needs-pandoc-when-you-have-sphinx) <small>(slides on [_Speakdeck_](https://speakerdeck.com))</small>
+    - And of course, the content in this book is pretty good as well.
