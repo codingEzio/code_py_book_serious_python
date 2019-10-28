@@ -97,7 +97,7 @@ uuid                generate UniversallyUniqueIDentifiers (UUIDs)
 
 # Documentation
 
-- _Sphinx_ setup
+- A brief intro to _Sphinx_
   - Try
     - `$ pipenv install sphinx==2.2.1` (currently the latest ver)
     - `$ sphinx-quickstart`
@@ -113,3 +113,17 @@ uuid                generate UniversallyUniqueIDentifiers (UUIDs)
     - [A sample of RestructedText](https://github.com/lsegal/atom-rst-preview/blob/master/sample.rst)
     - [Perfect intro for those who havn't heard of _Sphinx_](https://speakerdeck.com/stephenfin/who-needs-pandoc-when-you-have-sphinx) <small>(slides on [_Speakdeck_](https://speakerdeck.com))</small>
     - And of course, the content in this book is pretty good as well.
+- Managing changes to your APIs
+  1. Follow the conventions. e.g. `foo` is _public_, `_bar` is private.
+  2. Numbering API versions. e.g. **X.Y.Z** -> X: _major_, Y: _new features_, Z: _bug fixes_.
+  3. Documenting API changes. Something like
+  - _what is added_
+  - _what is deprecated_ <small>(do also use `warnings` module to mark this)</small>
+  - and _how to migrate to the new version_
+- Also, some advice regarding _API documentation_ <small>(a [good example](https://3.python-requests.org/))</small>
+  - Document early
+  - Use docstrings <small>(`""" """`)</small> to document classes and functions
+  - Give practical examples throughout
+  - Document the evolution of your APIs in detail, version by version <small>(e.g. )</small>.
+  - Make your documentation accessible, either on [Pypi](https://pypi.org/) or [ReadtheDocs](https://readthedocs.org/)
+  - Finally, choose a [_theme_](https://sphinx-themes.org/)!
