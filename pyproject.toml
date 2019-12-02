@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "book_serious_python"
+version = "0.0.1"
+description = "for fun"
+license = "MIT"
+authors = ["Ezio <assassinste@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6 || ^3.7"
+jupyter = "1.0.0"
+ipython = "7.8.0"
+sphinx = "~2.2.1"
+python-dateutil = "~2.8.0"
+iso8601 = "~0.1.12"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.8"
+black = "^19.3b0"
