@@ -44,3 +44,42 @@ $ python3 setup.py bdist_wheel --universal  # same as above, only use if u sup b
 - Awesomeness
     > It doesn't require installation, you can *load* and *run* your code  
     > just by adding a **`/`** like this `python3 PKGNAME-xx-xx-xx-xx.whl/PKGNAME`
+
+
+### Playing with [pypi.org]()
+- Setup
+    1. Register an account on [test.pypi.org](https://test.pypi.org/)
+    2. Add `.pypirc` to your `$HOME`
+        ```toml
+        [distutils]
+        index-servers = testpypi
+
+        [testpypi]
+        username = USERNAME
+        password = PASSWORD
+        repository = https://testpypi.python.org/pypi
+        ```
+    3. Upload your package
+        ```bash
+        $ pip3 install twine==3.1.1
+        $ twine upload --repository-url https://test.pypi.org/legacy/ YOUR_PACKAGE
+        ```
+- Notes
+    - Unfortunately, I encounterd enormous errors along the way. Still cannot get it right!
+        - Also, do note that the examples which the author puts had been already out-dated.
+        - The one I was trying is *testpypi* plus `twine`, well, I *failed* anyway.
+    - Here's some links might be useful for you
+        - [Using TestPyPI](https://packaging.python.org/guides/using-testpypi/)
+        - [Tutorial on `twine`](https://pypi.org/project/twine/)
+        - [Configuring a .pypirc File for Easier Python Packaging](https://truveris.github.io/articles/configuring-pypirc/)
+        - [Github Issue - testpypi deployment fails (deprecated API) ](https://github.com/gcovr/gcovr/issues/197)
+        - [Github Issue - Cannot upload using 1.9.1, 400 or 405 client errors](https://github.com/pypa/twine/issues/289)
+        - [Github Issue - Better error messages when metadata does not validate](https://github.com/pypa/warehouse/issues/2668)
+        - [stackoverflow - 400 ERROR: Invalid URI when uploading new PyPI package (twine)](https://stackoverflow.com/questions/44961730/400-error-invalid-uri-when-uploading-new-pypi-package-twine)
+    - For the `.pypirc` part
+        - You can generate a token on [test.pypi.org](https://test.pypi.org/manage/account/token/)
+        - then replace the old `username`, `password` with this
+            ```toml
+            username = __token__
+            password = pypi-LOOOOONG_TOKEN
+            ```

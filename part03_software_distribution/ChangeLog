@@ -1,6 +1,9 @@
 CHANGES
 =======
 
+* Adding generated sample files
+* Basics on packaging-related stuff
+* Adding 'wheel' for better packaging format
 * Adding libraries like 'setuptools' (pbr is used to enhance it)
 * Notes and practices on time-zone related topics
 * Renamed
