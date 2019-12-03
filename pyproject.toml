@@ -14,6 +14,7 @@ python-dateutil = "~2.8.0"
 iso8601 = "~0.1.12"
 pbr = "=5.4.4"
 setuptools = "=42.0.2"
+wheel = "=0.33.6"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.7.8"
