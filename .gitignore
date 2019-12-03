@@ -21,10 +21,17 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+
+# For demonstrating purposes
+# dist/
+# *.egg-info/
+# build/
+
+# Resolve those files I don't want
+part01_useful_stdlib_and_doc_practices/play_sphinx/build/
+
 .Python
-build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -34,7 +41,6 @@ parts/
 sdist/
 var/
 wheels/
-*.egg-info/
 .installed.cfg
 *.egg
 MANIFEST

@@ -1,0 +1,14 @@
+CHANGES
+=======
+
+* Adding libraries like 'setuptools' (pbr is used to enhance it)
+* Notes and practices on time-zone related topics
+* Renamed
+* Changed package manager to poetry (yay!)
+* More advices on documenting APIs
+* Added some userful links for Sphinx|RestructuredText
+* Dead simple description for this repo
+* Notes and code for Sphinx
+* Notes and code for Chapter02
+* Packages added: lint, fmt, debug, documentation
+* Filters added
