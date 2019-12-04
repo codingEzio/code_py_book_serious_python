@@ -10,6 +10,7 @@ def test_false() -> None:
     assert False
 
 
+@pytest.mark.dicttest
 def test_key() -> None:
     a = ["a", "b"]
     b = ["b"]
