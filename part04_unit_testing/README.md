@@ -21,6 +21,8 @@ $ pytest --verbose PATH/TO/TESTS    # it could detect all of them
 $ pytest --verbose TESTS -k "SPECFIC_FUNCTION"
 
 # Run particular tests based on keywords
-$ pytest --verbose TESTS -m "KEYWORDS"
-$ pytest --verbose TESTS -m "not KEYWORDS"
+$ pytest --verbose TESTS -m "KEYWORDS"              # tests with this keyword
+$ pytest --verbose TESTS -m "not KEYWORDS"          # any tests except this one
+$ pytest --verbose TESTS -m "KEYWORD or KEYWORD2"   # tests with either keywords
+$ pytest --verbose TESTS -m "KEYWORD and KEYWORD2"  # tests with both|all the keywords
 ```
